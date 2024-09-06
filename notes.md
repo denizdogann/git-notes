@@ -14,6 +14,14 @@
 
 ## undoing things
 
-*checkout commit: go back to code in that snapshot. dont make any difference in commit history
-*revert commit: undone the specific commit. makes a new commit that reverts anything done in that commit. commit historyde bir şey değişmez
-*reset commit: kullanma ignore et kullanmana gerek bi durum yok. commit historyyi de alter eder tehlikeli  
+* checkout commit: go back to code in that snapshot. dont make any difference in commit history
+* revert commit: undone the specific commit. makes a new commit that reverts anything done in that commit. commit historyde bir şey değişmez
+* reset commit: kullanma ignore et kullanmana gerek bi durum yok. commit historyyi de alter eder tehlikeli  
+
+## making branches
+
+launch edilen branch çoğunlukla main branch. değişiklik / yeni şeyler deneme yeri de branchler. birden fazla branch olabilir collab yaparken de handy bir şey ama şöyle bi `conflict` var: ben mainden bir branch çıkardım ve bir takım değişiklikler yaptım. bunları da sonrasında tekrar maine merge etmek istedim; fakat bu sırada biri mainden bir değişiklik yapmış. bu durumda git conflict uyarısı verir. buna dikkat etmek gerekiyor.
+
+## making collabs
+
+before starting the branch make sure you have the latest vers of the master branch. dont merge it the master branch immediately. instead push the branch. then make a pull request to repo so the team can agree or not. if all is ok you can merge pull req
